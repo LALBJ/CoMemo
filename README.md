@@ -2,6 +2,7 @@
 
 [\[📜 Paper\]](https://arxiv.org/pdf/2506.06279) [\[🚀 Quick Start\]](#quick-start)  
 
+
 ## Introduction
 
 LVLMs inherited LLMs architectural designs, which introduce suboptimal characteristics for multimodal processing. First, LVLMs exhibit a bimodal distribution in attention allocation, leading to the progressive neglect of central visual content as context expands. Second, conventional positional encoding schemes fail to preserve vital 2D structural relationships when processing dynamic high-resolution images.
@@ -18,9 +19,9 @@ Evaluated on seven diverse tasks, including long-context understanding, multi-im
 |     CoMemo-9B     |    [InternViT-300M-448px](https://huggingface.co/OpenGVLab/InternViT-300M-448px)    |          [internlm2-chat-7b](https://huggingface.co/internlm/internlm2-chat-7b)          |     [🤗 link](https://huggingface.co/CLLBJ16/CoMemo-9B)     |
 
 ## Method Overview
-<div class="image-row" style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-    <img src="https://lalbj.github.io/projects/CoMemo/static/images/RoPE_DHR.png" alt="teaser" style="max-width: 30%; height: auto;" />
-    <img src="https://lalbj.github.io/projects/CoMemo/static/images/CoMemo_framework.png" alt="teaser" style="max-width: 53%; height: auto;" />
+<div align="center">
+    <img src="https://lalbj.github.io/projects/CoMemo/static/images/RoPE_DHR.png" alt="teaser" width="30%" />
+    <img src="https://lalbj.github.io/projects/CoMemo/static/images/CoMemo_framework.png" alt="teaser" width="55%" />
 </div>
 
 **Left:** The computation process of Rope-DHR. The colors are assigned based on a mapping of position IDs in RoPE.
